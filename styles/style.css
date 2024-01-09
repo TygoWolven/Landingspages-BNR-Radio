@@ -14,12 +14,6 @@
     font-family: Jakarta;
 }
 
-body {
-    background-image: url(../images/bnr-slice1.png);
-    background-size: 100%;
-    overflow: hidden;
-}
-
 h1 {
     font-size: var(--font-size-large);
 }
@@ -36,4 +30,20 @@ h1 {
 :root {
     --font-size-large: 2.25rem;
     --font-size-insanely-large: 3.25rem;
+}
+
+body {
+    background-image: url(../images/bnr-slice1.png);
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.landingspage-content {
+    width: 100%;
+    height: 100%;
+}
+
+#BNR-Iphone {
+    width: 60%;
+    transform: rotateZ(10deg) scaleX(-1);
 }
