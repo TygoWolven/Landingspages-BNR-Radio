@@ -1,0 +1,9 @@
+/* === Fonts === */
+@font-face {
+    font-family: Jakarta;
+    src: url(../fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: Jakarta;
+}
