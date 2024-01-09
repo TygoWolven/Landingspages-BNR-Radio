@@ -1,9 +1,19 @@
 /* === Fonts === */
 @font-face {
     font-family: Jakarta;
-    src: url(../fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf);
+    src: url(../fonts/PlusJakartaSans-Medium.ttf);
 }
 
+/* === General === */
 * {
     font-family: Jakarta;
+}
+
+h1 {
+    font-size: var(--font-size-large);
+}
+
+/* === Custom Properties === */
+:root {
+    --font-size-large: 2.25rem;
 }
