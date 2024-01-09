@@ -1,7 +1,12 @@
 /* === Fonts === */
 @font-face {
     font-family: Jakarta;
-    src: url(../fonts/PlusJakartaSans-Medium.ttf);
+    src: url(../fonts/PlusJakartaSans-Light.ttf);
+}
+
+@font-face {
+    font-family: JakartaBold;
+    src: url(../fonts/PlusJakartaSans-ExtraBold.ttf);
 }
 
 /* === General === */
@@ -9,11 +14,26 @@
     font-family: Jakarta;
 }
 
+body {
+    background-image: url(../images/bnr-slice1.png);
+    background-size: 100%;
+    overflow: hidden;
+}
+
 h1 {
     font-size: var(--font-size-large);
+}
+
+.JakartaBold {
+    font-family: JakartaBold;
+}
+
+.InsanelyLarge {
+    font-size: var(--font-size-insanely-large);
 }
 
 /* === Custom Properties === */
 :root {
     --font-size-large: 2.25rem;
+    --font-size-insanely-large: 3.25rem;
 }
