@@ -6,6 +6,11 @@
 
 @font-face {
     font-family: JakartaBold;
+    src: url(../fonts/PlusJakartaSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: JakartaExtraBold;
     src: url(../fonts/PlusJakartaSans-ExtraBold.ttf);
 }
 
@@ -22,6 +27,10 @@ h1 {
 
 .JakartaBold {
     font-family: JakartaBold;
+}
+
+.JakartaExtraBold {
+    font-family: JakartaExtraBold;
 }
 
 .InsanelyLarge {
@@ -51,62 +60,41 @@ header {
     height: 4em;
 }
 
+/* === No Display for Mobile === */
 .nav-links {
-    display: flex;
-    align-items: center;
-
-    & a {
-        color: white;
-        text-decoration: none;
-        display: inline-block;
-        padding: 0 1em;
-        font-family: JakartaBold;
-    }
+    display: none;
 }
 
+#Live {
+    display: none;
+}
+
+/* === Mobile Navigation Buttons === */
 #BNR-Logo-Mic {
     position: absolute;
-    margin: 0 -2em;
+    left: 0;
     width: 55px;
     top: 5px;
 }
 
-#Live {
-    display: flex;
-    align-items: center;
-
-    padding: 0 0.75em;
-    height: 2.5em;
-
-    background: none;
+#menu-button {
     color: white;
+    scale: 1.75;
 
-    border: solid white 1px;
-    border-radius: 0.25em;
-
-    font-family: JakartaBold;
-    font-size: 16px;
-
-    cursor: pointer;
-
-    & #play-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        color: black;
-        background: #fc0;
-
-        width: 20px;
-        aspect-ratio: 1;
-
-        margin-left: 0.5em;
-        border-radius: 10px;
-    }
+    position: absolute;
+    padding: 0 1.5em;
+    top: 25px;
+    right: 0;
 }
 
-#search-button {
+#search-button2 {
+    color: white;
     scale: 1.5;
+
+    position: absolute;
+    padding: 0 5em;
+    top: 25px;
+    right: 0;
 }
 
 /* === Main Content === */
@@ -121,9 +109,80 @@ header {
     transform: rotateZ(10deg) scaleX(-1);
 }
 
-@media (min-width: 50em) {
+/* === Media Query for Desktop === */
+@media (min-width: 75em) {
     
+    /* === Body Background === */
     body {
         background-image: url(../images/bnr-slice1.png);
+    }
+
+    /* === Navigation Links === */
+    .nav-links {
+        display: flex;
+        align-items: center;
+    
+        & a {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            padding: 0 1em;
+            font-family: JakartaExtraBold;
+        }
+    }
+    
+    /* === Navigation BNR Logo === */
+    #BNR-Logo-Mic {
+        left: auto;
+        margin: 0 -3em;
+    }
+
+    /* === Navigation Live Button === */
+    #Live {
+        display: flex;
+        align-items: center;
+    
+        padding: 0 0.75em;
+        height: 2.5em;
+        margin-left: 22em;
+    
+        background: none;
+        color: white;
+    
+        border: solid white 1px;
+        border-radius: 0.25em;
+    
+        font-family: JakartaExtraBold;
+        font-size: 16px;
+    
+        cursor: pointer;
+    
+        & #play-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            color: black;
+            background: #fc0;
+    
+            width: 20px;
+            aspect-ratio: 1;
+    
+            margin-left: 0.5em;
+            border-radius: 10px;
+        }
+    }
+    
+    /* === Desktop Navigation Buttons === */
+    #search-button {
+        scale: 1.5;
+    }
+
+    #search-button2 {
+        display: none;
+    }
+
+    #menu-button {
+        display: none;
     }
 }
