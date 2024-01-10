@@ -9,7 +9,7 @@
     src: url(../fonts/PlusJakartaSans-ExtraBold.ttf);
 }
 
-/* === General === */
+/* === General Stylings === */
 * {
     font-family: Jakarta;
 }
@@ -32,9 +32,11 @@ h1 {
     --font-size-insanely-large: 3.25rem;
 }
 
+/* === Body Background === */
 body {
-    background-image: url(../images/bnr-slice1.png);
+    background-image: url(../images/bnr-slice1-small.png);
     background-size: 100%;
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 
@@ -46,4 +48,11 @@ body {
 #BNR-Iphone {
     width: 60%;
     transform: rotateZ(10deg) scaleX(-1);
+}
+
+@media (min-width: 50em) {
+    
+    body {
+        background-image: url(../images/bnr-slice1.png);
+    }
 }
