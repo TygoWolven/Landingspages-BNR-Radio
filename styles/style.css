@@ -42,14 +42,13 @@ body {
 }
 
 /* === Header === */
-
-
 header {
-    background: black;
-    height: 4em;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background: #1F1F1F;
+    height: 4em;
 }
 
 .nav-links {
@@ -60,8 +59,54 @@ header {
         color: white;
         text-decoration: none;
         display: inline-block;
-        padding: 0 3em;
+        padding: 0 1em;
+        font-family: JakartaBold;
     }
+}
+
+#BNR-Logo-Mic {
+    position: absolute;
+    margin: 0 -2em;
+    width: 55px;
+    top: 5px;
+}
+
+#Live {
+    display: flex;
+    align-items: center;
+
+    padding: 0 0.75em;
+    height: 2.5em;
+
+    background: none;
+    color: white;
+
+    border: solid white 1px;
+    border-radius: 0.25em;
+
+    font-family: JakartaBold;
+    font-size: 16px;
+
+    cursor: pointer;
+
+    & #play-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: black;
+        background: #fc0;
+
+        width: 20px;
+        aspect-ratio: 1;
+
+        margin-left: 0.5em;
+        border-radius: 10px;
+    }
+}
+
+#search-button {
+    scale: 1.5;
 }
 
 /* === Main Content === */
@@ -74,10 +119,6 @@ header {
 #BNR-Iphone {
     width: 60%;
     transform: rotateZ(10deg) scaleX(-1);
-}
-
-#BNR-Logo-Mic {
-    width: 50px;
 }
 
 @media (min-width: 50em) {
