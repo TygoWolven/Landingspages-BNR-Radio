@@ -25,24 +25,6 @@ h1 {
     font-size: var(--font-size-large);
 }
 
-.JakartaBold {
-    font-family: JakartaBold;
-}
-
-.JakartaExtraBold {
-    font-family: JakartaExtraBold;
-}
-
-.InsanelyLarge {
-    font-size: var(--font-size-insanely-large);
-}
-
-/* === Custom Properties === */
-:root {
-    --font-size-large: 2.25rem;
-    --font-size-insanely-large: 3.25rem;
-}
-
 /* === Body Background === */
 body {
     background-image: url(../images/bnr-slice1-small.png);
@@ -101,13 +83,30 @@ header {
 .landingspage-content {
     width: 100%;
     height: 100%;
-    overflow: hidden;   
+    overflow: hidden;  
 }
 
-#BNR-Iphone {
+.slogan {
+    position: absolute;
+
+    & h1 {
+        font-size: 3.5rem;
+    }
+
+    & span {
+        position: relative;
+        bottom: 20px;
+
+        font-family: JakartaExtraBold;
+        font-size: 8.5rem;
+    }
+}
+
+
+/* #BNR-Iphone {
     width: 60%;
     transform: rotateZ(10deg) scaleX(-1);
-}
+} */
 
 /* === Media Query for Desktop === */
 @media (min-width: 75em) {
