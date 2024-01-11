@@ -178,7 +178,6 @@ header {
     
         padding: 0 0.75em;
         height: 2.5em;
-        margin-left: 22em;
     
         background: none;
         color: white;
@@ -206,6 +205,10 @@ header {
             margin-left: 0.5em;
             border-radius: 10px;
         }
+    }
+
+    #Live-Button {
+        padding-left: 22em;
     }
     
     /* === Desktop Navigation Buttons === */
