@@ -21,16 +21,12 @@
     margin: 0;
 }
 
-h1 {
-    font-size: var(--font-size-large);
-}
-
 /* === Body Background === */
     body {
         background-image: url(../images/bnr-slice1-small-yellow.png);
-        background-size: 1200px;
-        background-position: left 0;
         background-repeat: no-repeat;
+        background-position: left 0;
+        background-size: 1200px;
         overflow: hidden;
     }
 
@@ -156,123 +152,24 @@ h1 {
     }
 
 @media (min-width: 55em) {
-    /* === Body Background === */
-    body {
-        background-image: url(../images/bnr-slice1-small-yellow.png);
-        background-size: 1200px;
-        background-position: left 0;
-        background-repeat: no-repeat;
-        overflow: hidden;
-    }
-
-    /* === Header === */
-    header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        background: #1F1F1F;
-        height: 4em;
-    }
-
-    /* === No Display for Mobile === */
-    .nav-links {
-        display: none;
-    }
-
-    #Live {
-        display: none;
-    }
-
-    /* === Mobile Navigation Buttons === */
-    #BNR-Logo-Mic {
-        position: absolute;
-        left: 10px;
-        width: 55px;
-        top: 5px;
-    }
-
-    #menu-button {
-        color: white;
-        scale: 1.75;
-
-        position: absolute;
-        padding: 0 1.5em;
-        top: 25px;
-        right: 0;
-    }
-
-    #search-button2 {
-        color: white;
-        scale: 1.5;
-
-        position: absolute;
-        padding: 0 5em;
-        top: 25px;
-        right: 0;
-    }
-
     /* === Main Content === */
     .slogan {
         & h1 {
             font-size: 3.5rem;
         }
-
         & span {
             font-size: 8.5rem;
         }
     }
 
-    /* === Download Links === */
-    .app-downloads {
-        width: fit-content;
-        padding-top: 1.5em;
-
-        display: grid;
-        grid-template-areas:
-        "gp"
-        "as"
-        "qr";
-        grid-gap: 10px;
-    }
-
-    #googleplay {
-        width: 300px;
-
-        grid-area: gp;
-        align-self: end;
-    }
-
-    #appstore {
-        width: 300px;
-
-        grid-area: as;
-    }
-
-    #qr {
-        width: 277px;
-        background-color: black;
-        border: solid #A6A6A6;
-        border-radius: 20px;
-        padding: 0.5em;
-
-        grid-area: qr;
-    }
-
     /* === App on Iphone === */
     #BNR-Iphone {
         width: 25em;
-        transform: scaleX(-1) rotateZ(-5deg);
-
-        position: absolute;
-        right: -8%;
-        bottom: -350px;
     }
 }
 
 /* === Media Query for Desktop === */
 @media (min-width: 75em) {
-    
     /* === Body Background === */
     body {
         background-image: url(../images/bnr-slice1.png);
@@ -344,6 +241,7 @@ h1 {
         scale: 1.5;
     }
 
+    /* === No Display for Desktop === */
     #search-button2 {
         display: none;
     }
@@ -374,10 +272,6 @@ h1 {
     }
 
     #BNR-Iphone {
-        width: 25em;
-        transform: scaleX(-1) rotateZ(-5deg);
-    
-        position: absolute;
         right: 5%;
         bottom: -200px;
     }
