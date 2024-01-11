@@ -29,10 +29,15 @@ h1 {
 body {
     background-image: url(../images/bnr-slice1-small.png);
     background-size: 1200px;
-    background-position: right 0;
+    background-position: left 0;
     background-repeat: no-repeat;
     overflow: hidden;
 }
+
+/* body {
+    background-image: url(../images/bnr-slice1.png);
+    background-size: 2000px;
+} */
 
 /* === Header === */
 header {
