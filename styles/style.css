@@ -28,7 +28,8 @@ h1 {
 /* === Body Background === */
 body {
     background-image: url(../images/bnr-slice1-small.png);
-    background-size: 100%;
+    background-size: 1200px;
+    background-position: right 0;
     background-repeat: no-repeat;
 }
 
@@ -114,6 +115,7 @@ header {
     /* === Body Background === */
     body {
         background-image: url(../images/bnr-slice1.png);
+        background-size: 2000px;
     }
 
     /* === Navigation Links === */
