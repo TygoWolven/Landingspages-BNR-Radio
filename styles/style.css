@@ -23,10 +23,10 @@
 
 /* === Body Background === */
     body {
-        background-image: url(../images/bnr-slice1-small-yellow.png);
+        background-image: url(../images/bnr-slice1.png);
         background-repeat: no-repeat;
         background-position: left 0;
-        background-size: 1200px;
+        background-size: 2000px;
         overflow: hidden;
     }
 
@@ -85,11 +85,12 @@
 
     .slogan {
         width: fit-content;
-        margin: 0 auto;
-        margin-top: 3em;
+        position: absolute;
+        top: 20%;
+        left: 15%;
 
         & h1 {
-            font-size: calc(16px + 4.55vw);
+            font-size: calc(16px + 3.85vw);
         }
 
         & span {
@@ -97,7 +98,7 @@
             bottom: 20px;
 
             font-family: JakartaExtraBold;
-            font-size: calc(36px + 11.4vw);
+            font-size: calc(36px + 9.62vw);
         }
     }
 
@@ -108,9 +109,8 @@
 
         display: grid;
         grid-template-areas:
-        "gp"
-        "as"
-        "qr";
+        "gp qr"
+        "as qr";
         grid-gap: 10px;
     }
 
@@ -128,10 +128,10 @@
     }
 
     #qr {
-        width: 277px;
+        width: 177px;
         background-color: black;
         border: solid #A6A6A6;
-        border-radius: 20px;
+        border-radius: 10px;
         padding: 0.5em;
 
         grid-area: qr;
@@ -139,43 +139,18 @@
 
     /* === App on Iphone === */
     #BNR-Iphone {
-        width: 45.5%;
-
+        width: 25em;
         transform: scaleX(-1) rotateZ(-5deg);
         z-index: -10;
 
         position: absolute;
-        right: -8%;
-        bottom: -350px;
+        right: -15%;
+        top: 15%;
         
         transition: ease 0.5s;
     }
 
-@media (min-width: 55em) {
-    /* === Main Content === */
-    .slogan {
-        & h1 {
-            font-size: 3.5rem;
-        }
-        & span {
-            font-size: 8.5rem;
-        }
-    }
-
-    /* === App on Iphone === */
-    #BNR-Iphone {
-        width: 25em;
-    }
-}
-
-/* === Media Query for Desktop === */
-@media (min-width: 75em) {
-    /* === Body Background === */
-    body {
-        background-image: url(../images/bnr-slice1.png);
-        background-size: 2000px;
-    }
-
+@media (min-width: 65em) {
     /* === Navigation Links === */
     .nav-links {
         display: flex;
@@ -233,7 +208,7 @@
     }
 
     #Live-Button {
-        padding-left: 22em;
+        right: 0;
     }
     
     /* === Desktop Navigation Buttons === */
@@ -250,6 +225,29 @@
         display: none;
     }
 
+    /* === Main Content === */
+    .slogan {
+        & h1 {
+            font-size: 3.5rem;
+        }
+        & span {
+            font-size: 8.5rem;
+        }
+    }
+
+    #BNR-Iphone {
+        right: -5%;
+    }
+}
+
+/* === Media Query for Desktop === */
+@media (min-width: 75em) {
+
+    /* === Navigation Live Button === */
+    #Live-Button {
+        padding-left: 22em;
+    }
+
     /* === Title Text === */
     .slogan {
         position: absolute;
@@ -260,19 +258,9 @@
     /* === Download Links === */
     .app-downloads {
         margin: 0 auto;
-
-        grid-template-areas:
-        "gp qr"
-        "as qr";
-    }
-
-    #qr {
-        width: 177px;
-        border-radius: 10px;
     }
 
     #BNR-Iphone {
         right: 5%;
-        bottom: -200px;
     }
 }
