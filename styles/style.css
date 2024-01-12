@@ -14,9 +14,19 @@
     src: url(../fonts/PlusJakartaSans-ExtraBold.ttf);
 }
 
+/* === Custom Properties === */
+:root {
+    /* === Colors === */
+    --bnr-color: #fc0;
+
+    /* === Transitions === */
+    --transition-1: ease 0.5s;
+}
+
 /* === General Stylings === */
 * {
     font-family: Jakarta;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -68,7 +78,7 @@
     /* === Mobile Navigation Buttons === */
     #BNR-Logo-Mic {
         position: absolute;
-        left: 10px;
+        left: 13px;
         width: 55px;
         top: 5px;
     }
@@ -85,12 +95,12 @@
 
     #search-button2 {
         color: white;
-        scale: 1.5;
+        scale: 1.4;
 
         position: absolute;
         padding: 0 5em;
-        top: 25px;
-        right: 0;
+        top: 24px;
+        right: -2px;
     }
 
     /* === Main Content === */
@@ -143,7 +153,7 @@
     }
 
     #qr {
-        width: calc(36px + 13.5vw);
+        width: calc(56px + 13.5vw);
         background-color: black;
         border: solid #A6A6A6;
         border-radius: 10px;
@@ -164,10 +174,10 @@
         margin: 0 auto;
         padding-top: 3em;
 
-        transition: ease 0.5s;
+        transition: var(--transition-1);
     }
 
-@media (min-width: 60em) {
+@media (min-width: 62em) {
     /* === Body Background === */
     body {
         background-image: url(../images/bnr-slice1.png);
@@ -193,7 +203,7 @@
         width: 25em;
         transform: scaleX(-1) rotateZ(-5deg);
 
-        right: -15%;
+        right: -13%;
         top: 15%;
         margin-right: 0;
     }
@@ -209,7 +219,7 @@
     }
 
     #qr {
-        width: 177px;
+        width: 198px;
     }
 }
 
@@ -226,7 +236,73 @@
             display: inline-block;
             padding: 0 1em;
             font-family: JakartaExtraBold;
+            transition: var(--transition-1);
+            z-index: 20;
         }
+
+        & a:hover {
+            color: var(--bnr-color);
+            transition: var(--transition-1);
+        }
+    }
+
+    /* === Navigation Dropdowns === */
+    .dropdown1 {
+        background: #1F1F1F;
+        color: white;
+        list-style: none;
+        display: none;
+
+        position: absolute;
+        margin-left: 5.5em;
+        padding: 1em;
+        width: 272px;
+        z-index: 10;
+        top: 22px;
+
+        & li a{
+            font-family: JakartaExtraBold;
+            padding: 1.5em 0 0.3em 0;
+            transition: var(--transition-1);
+        }
+
+        & li a:hover {
+            color: var(--bnr-color);
+            transition: var(--transition-1);
+        }
+    }
+
+    /* .dropdown2 {
+        background: #1F1F1F;
+        color: white;
+        list-style: none;
+        display: none;
+
+        position: absolute;
+        margin-left: 5.5em;
+        padding: 1em;
+        width: 272px;
+        z-index: 10;
+        top: 22px;
+
+        & li a{
+            font-family: JakartaExtraBold;
+            padding: 1.5em 0 0.3em 0;
+            transition: var(--transition-1);
+        }
+
+        & li a:hover {
+            color: var(--bnr-color);
+            transition: var(--transition-1);
+        }
+    } */
+
+    .showdropdown {
+        display: block;
+    }
+
+    .flipchevron {
+        transform: rotateZ(180deg);
     }
     
     /* === Navigation BNR Logo === */
@@ -241,7 +317,7 @@
         align-items: center;
     
         padding: 0 0.75em;
-        height: 2.5em;
+        height: 42px;
     
         background: none;
         color: white;
@@ -261,7 +337,7 @@
             justify-content: center;
     
             color: black;
-            background: #fc0;
+            background: var(--bnr-color);
     
             width: 20px;
             aspect-ratio: 1;
@@ -272,12 +348,12 @@
     }
 
     #Live-Button {
-        padding-left: 22em;
+        padding-left: 12.7vw;
     }
     
     /* === Desktop Navigation Buttons === */
     #search-button {
-        scale: 1.5;
+        scale: 1.4;
     }
 
     /* === No Display for Desktop === */
