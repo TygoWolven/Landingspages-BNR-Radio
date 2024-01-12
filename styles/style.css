@@ -35,6 +35,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
 
         background: #1F1F1F;
         height: 4em;
@@ -151,6 +152,23 @@
     }
 
 @media (min-width: 65em) {
+    /* === Main Content === */
+    .slogan {
+        & h1 {
+            font-size: 3.5rem;
+        }
+        & span {
+            font-size: 8.5rem;
+        }
+    }
+
+    #BNR-Iphone {
+        right: -5%;
+    }
+}
+
+/* === Media Query for Desktop === */
+@media (min-width: 75em) {
     /* === Navigation Links === */
     .nav-links {
         display: flex;
@@ -208,7 +226,7 @@
     }
 
     #Live-Button {
-        right: 0;
+        padding-left: 22em;
     }
     
     /* === Desktop Navigation Buttons === */
@@ -223,29 +241,6 @@
 
     #menu-button {
         display: none;
-    }
-
-    /* === Main Content === */
-    .slogan {
-        & h1 {
-            font-size: 3.5rem;
-        }
-        & span {
-            font-size: 8.5rem;
-        }
-    }
-
-    #BNR-Iphone {
-        right: -5%;
-    }
-}
-
-/* === Media Query for Desktop === */
-@media (min-width: 75em) {
-
-    /* === Navigation Live Button === */
-    #Live-Button {
-        padding-left: 22em;
     }
 
     /* === Title Text === */
