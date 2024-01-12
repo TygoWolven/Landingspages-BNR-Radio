@@ -116,14 +116,14 @@
     }
 
     #googleplay {
-        width: 300px;
+        width: 25vw;
 
         grid-area: gp;
         align-self: end;
     }
 
     #appstore {
-        width: 300px;
+        width: 25vw;
 
         grid-area: as;
     }
