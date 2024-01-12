@@ -26,8 +26,12 @@
         background-image: url(../images/bnr-slice1-small-yellow.png);
         background-repeat: no-repeat;
         background-position: left 0;
-        background-size: 2000px;
+        background-size: 1200px;
         overflow-x: hidden;
+    }
+
+    body, html {
+        word-spacing: 0.125em;
     }
 
     /* === Header === */
@@ -39,6 +43,17 @@
 
         background: #1F1F1F;
         height: 4em;
+    }
+
+    /* === Footer === */
+    footer {
+        padding: 1em;
+        background: #1F1F1F;
+        color: white;
+        
+        & ul {
+            list-style: none;
+        }
     }
 
     /* === No Display for Mobile === */
@@ -140,7 +155,7 @@
     /* === App on Iphone === */
     #BNR-Iphone {
         width: 15em;
-        transform: scaleX(-1) rotateZ(-65deg);
+        transform: scaleX(-1) rotateZ(-50deg);
         z-index: -10;
 
         position: absolute;
@@ -152,7 +167,13 @@
         transition: ease 0.5s;
     }
 
-@media (min-width: 65em) {
+@media (min-width: 60em) {
+    /* === Body Background === */
+    body {
+        background-image: url(../images/bnr-slice1.png);
+        background-size: 2000px;
+    }
+
     /* === Title Text === */
     .slogan {
         position: absolute;
@@ -170,11 +191,11 @@
     /* === App on Iphone === */
     #BNR-Iphone {
         width: 25em;
-        right: -5%;
+        transform: scaleX(-1) rotateZ(-5deg);
 
-        position: absolute;
         right: -15%;
         top: 15%;
+        margin-right: 0;
     }
 
     /* === Download Links === */
