@@ -44,6 +44,39 @@
         word-spacing: 0.125em;
     }
 
+    #switch-hint {
+        position: absolute;
+        top: 75px;
+        left: 10px;
+
+        color: white;
+        background: #1F1F1F;
+        animation: flashDissapear 3s 3 forwards;
+
+        font-family: JakartaExtraBold;
+        max-width: 20em;
+        padding: 1em;
+        z-index: 10;
+    }
+
+    @keyframes flashDissapear {
+        0% {
+            opacity: 0;
+        }
+        20% {
+            opacity: 100;        
+        }
+        60% {
+            opacity: 100;
+        }
+        80% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
     /* === Header === */
     header {
         display: flex;
@@ -57,12 +90,33 @@
 
     /* === Footer === */
     footer {
-        padding: 1em;
+        padding: 3em;
         background: #1F1F1F;
         color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 14px;
+
+        & .column {
+            padding: 2em 4em;
+        }
+
+        & h2 {
+            font-size: 16px;
+            font-family: JakartaExtraBold;
+        }
         
         & ul {
             list-style: none;
+        }
+
+        & li {
+            padding-top: 1em;
+        }
+
+        & img {
+            width: 160px;
         }
     }
 
@@ -127,6 +181,31 @@
         }
     }
 
+    .animated-slogan {
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .animated-slogan > div {
+        height: 100%;
+        animation: spinWords 10s infinite;
+    }
+
+    @keyframes spinWords {
+        25% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-100%);
+        }
+        75% {
+            transform: translateY(-100%);
+        }
+        100% {
+            transform: translateY(-200%);
+        }
+    }
+
     /* === Download Links === */
     .app-downloads {
         width: fit-content;
@@ -134,8 +213,8 @@
 
         display: grid;
         grid-template-areas:
-        "gp qr"
-        "as qr";
+        "as qr"
+        "gp qr";
         grid-gap: 10px;
     }
 
@@ -247,7 +326,7 @@
     }
 
     /* === Navigation Dropdowns === */
-    .dropdown1 {
+    .dropdown {
         background: #1F1F1F;
         color: white;
         list-style: none;
@@ -271,31 +350,6 @@
             transition: var(--transition-1);
         }
     }
-
-    /* .dropdown2 {
-        background: #1F1F1F;
-        color: white;
-        list-style: none;
-        display: none;
-
-        position: absolute;
-        margin-left: 5.5em;
-        padding: 1em;
-        width: 272px;
-        z-index: 10;
-        top: 22px;
-
-        & li a{
-            font-family: JakartaExtraBold;
-            padding: 1.5em 0 0.3em 0;
-            transition: var(--transition-1);
-        }
-
-        & li a:hover {
-            color: var(--bnr-color);
-            transition: var(--transition-1);
-        }
-    } */
 
     .showdropdown {
         display: block;
@@ -348,7 +402,7 @@
     }
 
     #Live-Button {
-        padding-left: 12.7vw;
+        padding-left: 28vw;
     }
     
     /* === Desktop Navigation Buttons === */
