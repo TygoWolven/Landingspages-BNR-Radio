@@ -52,6 +52,8 @@
         color: white;
         background: #1F1F1F;
         animation: flashDissapear 3s 3 forwards;
+        animation-delay: 1s;
+        opacity: 0;
 
         font-family: JakartaExtraBold;
         max-width: 20em;
@@ -184,11 +186,16 @@
     .animated-slogan {
         height: 250px;
         overflow: hidden;
-    }
+        text-align: center;
 
-    .animated-slogan > div {
-        height: 100%;
-        animation: spinWords 10s infinite;
+        & div {
+            height: 100%;
+            animation: spinWords 10s infinite;
+        }
+
+        & .bnr-spacing {
+            letter-spacing: 8px;
+        }
     }
 
     @keyframes spinWords {
@@ -210,6 +217,7 @@
     .app-downloads {
         width: fit-content;
         padding-top: 1.5em;
+        margin: 0 auto;
 
         display: grid;
         grid-template-areas:
@@ -256,7 +264,7 @@
         transition: var(--transition-1);
     }
 
-@media (min-width: 62em) {
+@media (min-width: 67em) {
     /* === Body Background === */
     body {
         background-image: url(../images/bnr-slice1.png);
@@ -300,10 +308,19 @@
     #qr {
         width: 198px;
     }
+
+    .app-downloads {
+        float: left;
+    }
+
+    .animated-slogan{
+        text-align: left;
+    }
+
 }
 
 /* === Media Query for Desktop === */
-@media (min-width: 75em) {
+@media (min-width: 82em) {
     /* === Navigation Links === */
     .nav-links {
         display: flex;
@@ -420,9 +437,6 @@
     }
 
     /* === Download Links === */
-    .app-downloads {
-        margin: 0 auto;
-    }
 
     #BNR-Iphone {
         right: 5%;
