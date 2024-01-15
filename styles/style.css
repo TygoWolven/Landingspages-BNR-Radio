@@ -274,7 +274,7 @@
     /* === Title Text === */
     .slogan {
         position: absolute;
-            top: 20%;
+            top: 15%;
             left: 15%;
 
         & h1 {
