@@ -5,6 +5,16 @@ const radioDropdown = document.getElementById('radio-dropdown'),
 
 radioDropdown.addEventListener('click', showDropdown1)
 function showDropdown1 () {
-    dropDown.classList.toggle('showdropdown')
+    dropDown.classList.toggle('show')
     chevron.classList.toggle('flipchevron')
+}
+
+const liveButton = document.getElementById('Live-Button'),
+      mediaPlayer = document.querySelector('.mediaplayer'),
+      blurredWall = document.querySelector('.blurred-wall');
+
+liveButton.addEventListener('click', showMediaPlayer)
+function showMediaPlayer () {
+    mediaPlayer.classList.toggle('slide-down')
+    blurredWall.classList.toggle('show')
 }
