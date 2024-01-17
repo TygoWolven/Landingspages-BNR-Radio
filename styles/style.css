@@ -558,9 +558,22 @@
 /* ======================== */
 
 .current-program {
+    display: flex;
     background: white;
     max-width: 80%;
-    
+
     margin: 2em auto;
     padding: 1em;
+
+    & img {
+        max-width: 30%;
+    }
+}
+
+.podcast-information {
+    padding: 1em;
+
+    & h2 {
+        font-family: JakartaExtraBold;
+    }
 }
