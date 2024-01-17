@@ -52,7 +52,7 @@
 
         color: white;
         background: var(--bnr-grey);
-        animation: flashDissapear 3s 3 forwards;
+        animation: flashDissapear 2ms 3 forwards;
         animation-delay: 1s;
         opacity: 0;
 
@@ -464,14 +464,19 @@
         z-index: -10;
 
         display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas: 
         "media-cover media-info"
         "media-cover media-controls";
     }
 
-    .media-cover img {
-        max-width: 12em;
+    .media-cover {
         grid-area: media-cover;
+
+        & img {
+            max-width: 12em;
+        }
     }
 
     .media-info {
@@ -493,7 +498,18 @@
     }
 
     .media-controls {
+        align-self: center;
         grid-area: media-controls;
+    }
+
+    .control-icons {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+
+        & i {
+            margin: 0 2em;
+        }
     }
 
     #volume-button {
