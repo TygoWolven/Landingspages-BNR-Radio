@@ -552,3 +552,15 @@
         display: block;
     }
 }
+
+ /* ========================= */
+ /* === Landingspagina 2 === */
+/* ======================== */
+
+.current-program {
+    background: white;
+    max-width: 80%;
+    
+    margin: 2em auto;
+    padding: 1em;
+}
