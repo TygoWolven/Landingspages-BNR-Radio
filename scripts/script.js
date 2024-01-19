@@ -18,3 +18,5 @@ function showMediaPlayer () {
     mediaPlayer.classList.toggle('slide-down')
     blurredWall.classList.toggle('show')
 }
+
+
