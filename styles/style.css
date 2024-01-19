@@ -118,6 +118,11 @@
             padding-top: 1em;
         }
 
+        & a {
+            color: white;
+            text-decoration: none;
+        }
+
         & img {
             width: 160px;
         }
