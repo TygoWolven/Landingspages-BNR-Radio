@@ -52,7 +52,7 @@
 
         color: white;
         background: var(--bnr-grey);
-        animation: flashDissapear 2ms 3 forwards;
+        animation: flashDissapear 3s 3 forwards;
         animation-delay: 1s;
         opacity: 0;
 
