@@ -56,7 +56,7 @@
 
     <section class="mediaplayer">
         <div class="media-cover">
-            <img src="./images/napleitenpodcast.png" alt="Podcast Cover">
+            <img src="./images/bnr-big-five.png" alt="Podcast Cover">
         </div>
         <div class="media-info">
             <h2>BNR's Big Five</h2>
@@ -74,28 +74,91 @@
 
     <div class="landingspage-content">
 
-        <h1>Luister nu naar één van onze programma's!</h1>
-        
-        <section class="current-program">   
+        <h1 class="landingspage2-title">Luister nu naar één van onze programma's!</h1>
 
-            <img src="./images/napleitenpodcast.png" alt="Podcast Cover">
+        <div class="programs">
 
-            <div class="podcast-information">
-                <h2>Napleiten</h2>
-                <h3>Elke zaterdag om 10.00 uur</h3>
-                <p>
-                    Misdaadjournalist Wouter Laumans en strafpleiter Christian Flokstra praten met advocaten 
-                    en officieren van justitie over bijzondere zaken die hen altijd zullen bijblijven.
-                </p>
-                <h4>Volg dit programma via:</h4>
-                <div class="program-buttons">
-                    <button><i class='bx bxs-volume-full'></i> Luister live</button>
-                    <button><i class='bx bxs-tv'></i> Kijk live</button>
-                    <button><i class='bx bx-mobile'></i> BNR App</button>
+            <section class="program">   
+
+                <img src="./images/napleitenpodcast.png" alt="Podcast Cover">
+    
+                <div class="podcast-information">
+                    <h2>Napleiten</h2>
+                    <h3>Elke zaterdag van <br> 10.00 tot 11:00 uur</h3>
+                    <p>
+                        Misdaadjournalist Wouter Laumans en strafpleiter Christian Flokstra praten met advocaten 
+                        en officieren van justitie over bijzondere zaken die hen altijd zullen bijblijven.
+                    </p>
                 </div>
-            </div>
-        </section>
+                <div class="podcast-options">
+                    <h4>Volg Napleiten via:</h4>
+                    <div class="program-buttons">
+                        <button id="luister-live">
+                            <i class='bx bxs-right-arrow' id="luister-live-icon"></i>
+                            Luister live
+                        </button>
+                        <audio id="live-player" src="https://20133.live.streamtheworld.com/BNR_NIEUWSRADIO.mp3?dist=bnrweb"></audio>
 
+                        <button>
+                            <a href="https://www.bnr.nl/player/kijk">
+                                <i class='bx bxs-camera-movie'></i> 
+                                Kijk live
+                            </a>
+                        </button>
+
+                        <button>
+                            <a href="./index.html">
+                                <i class='bx bx-mobile'></i> 
+                                BNR App
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="program">   
+    
+                <img src="./images/boekestijn.png" alt="Podcast Cover">
+    
+                <div class="podcast-information">
+                    <h2>Boekestijn & De Wijk</h2>
+                    <h3>Elke zaterdag van <br> 11.00 tot 11.30 uur</h3>
+                    <p>
+                        Arend Jan Boekestijn en Rob de Wijk gaan onder leiding van Hugo 
+                        Reitsma op zoek naar de nieuwe wereldorde.
+                    </p>
+                </div>
+                <div class="podcast-options">
+                    <h4>Volg Boekestijn & De Wijk via:</h4>
+                    <div class="program-buttons">
+                        <button>
+                            <a href="https://open.spotify.com/show/4taEZvMzjGiQIBJlxihjE2">
+                                <i class='bx bxl-spotify'></i> 
+                                Spotify
+                            </a>
+                        </button>
+
+                        <button>
+                            <a href="https://podcasts.apple.com/nl/podcast/boekestijn-en-de-wijk-bnr/id1076289388?mt=2">
+                                <i class='bx bxl-apple'></i> 
+                                Apple Podcasts
+                            </a>
+                        </button>
+
+                        <button>
+                            <a href="./index.html">
+                                <i class='bx bx-mobile'></i> 
+                                BNR App
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <button id="programmagids-button"><a href="https://www.bnr.nl/programmagids">Bekijk hele programmagids</a></button>
+
+        </div>
+        
     </div>
 
     <footer>

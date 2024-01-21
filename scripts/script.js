@@ -19,5 +19,18 @@ function showMediaPlayer () {
     blurredWall.classList.toggle('show')
 }
 
+const luisterLiveButton = document.querySelector('#luister-live'),
+      luisterLiveIcon = document.querySelector('#luister-live-icon'),
+      livePlayer = document.getElementById('live-player');
 
-
+luisterLiveButton.addEventListener('click', changeButton)
+function changeButton () {
+    luisterLiveIcon.classList.toggle('bxs-right-arrow')
+    luisterLiveIcon.classList.toggle('bx-pause')
+    if (livePlayer.paused) {
+        livePlayer.play()
+    } 
+    else {
+        livePlayer.pause()
+    }
+}

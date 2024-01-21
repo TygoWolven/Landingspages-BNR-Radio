@@ -82,6 +82,7 @@
 
     /* === Header === */
     header {
+        position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -89,6 +90,7 @@
 
         background: var(--bnr-grey);
         height: 4em;
+        z-index: 4;
     }
 
     /* === Footer === */
@@ -465,8 +467,8 @@
         color: white;
         transition: var(--transition-1);
 
-        transform: translateY(-15em);
-        z-index: -10;
+        transform: translateY(-11em);
+        z-index: 3;
 
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -537,10 +539,6 @@
         border-radius: 50%;
     }
 
-    .slide-down {
-        transform: translateY(0em);
-    }
-
     .blurred-wall {
         position: absolute;
         width: 100%;
@@ -549,8 +547,12 @@
         background-color: #ffffff10;
         backdrop-filter: blur(10px);
         
-        z-index: -20;
+        z-index: 2;
         display: none;
+    }
+
+    .slide-down {
+        transform: translateY(4em);
     }
 
     .show {
@@ -562,16 +564,31 @@
  /* === Landingspagina 2 === */
 /* ======================== */
 
-.current-program {
-    display: flex;
-    background: white;
-    max-width: 80%;
+.programs {
+    position: absolute;
+    top: 8em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 
-    margin: 2em auto;
-    padding: 1em;
+    background: white;
+    max-width: 60%;
+    z-index: 1;
+}
+
+.program {
+    display: flex;
+    padding: 2em;
 
     & img {
-        max-width: 30%;
+        max-width: 20em;
+        border: solid 1px rgb(215, 215, 215);
+    }
+
+    & p {
+        width: 20em;
+        line-height: 1.4;
+        padding-top: 1em;
     }
 }
 
@@ -587,9 +604,39 @@
 .program-buttons {
     
      & button {
+        background: white;
+        border: solid 1px rgb(215, 215, 215);
         padding: 1em;
-        margin-top: 0.5em;
-        margin-right: 2em;
+        margin: 0.75em 0.75em 0 0;
         font-family: JakartaExtraBold;
      }
+
+     & button:hover {
+        cursor: pointer;
+     }
+
+     & a {
+        font-family: JakartaExtraBold;
+        text-decoration: none;
+        color: black;
+     }
+
+     & i {
+        background: var(--bnr-color);
+        margin-right: 0.75em;
+        border-radius: 50%;
+        padding: 0.5em;
+     }
+}
+
+#programmagids-button {
+    background: var(--bnr-color);
+    padding: 1em;
+    border: none;
+
+    & a {
+        font-family: JakartaExtraBold;
+        text-decoration: none;
+        color: black;
+    }
 }

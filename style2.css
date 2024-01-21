@@ -1,0 +1,33 @@
+/* === Fonts === */
+@font-face {
+    font-family: Jakarta;
+    src: url(../fonts/PlusJakartaSans-Light.ttf);
+}
+
+@font-face {
+    font-family: JakartaBold;
+    src: url(../fonts/PlusJakartaSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: JakartaExtraBold;
+    src: url(../fonts/PlusJakartaSans-ExtraBold.ttf);
+}
+
+/* === Custom Properties === */
+:root {
+    /* === Colors === */
+    --bnr-color: #fc0;
+    --bnr-grey: #1F1F1F;
+
+    /* === Transitions === */
+    --transition-1: ease 0.5s;
+}
+
+/* === General Stylings === */
+* {
+    font-family: Jakarta;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
