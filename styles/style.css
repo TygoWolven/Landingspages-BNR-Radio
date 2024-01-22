@@ -205,10 +205,6 @@
             height: 100%;
             animation: spinWords 10s infinite;
         }
-
-        & .bnr-spacing {
-            letter-spacing: 8px;
-        }
     }
 
     @keyframes spinWords {

@@ -99,8 +99,8 @@
 
         background: var(--bnr-grey);
         width: 200%;
-        height: 30%;
-        top: 75%;
+        height: 40%;
+        top: 60%;
     }
 
     .backdrop-black2 {
@@ -111,20 +111,54 @@
 
         background: var(--bnr-grey);
         width: 200%;
-        height: 30%;
+        height: 40%;
         top: 60%;
     }
 
-    .backdrop-greenish {
+    .backdrop-black50 {
         position: absolute;
         left: -50%;
         z-index: -15;
-        transform: rotate(1deg);
 
-        background: #8F780F;
+        background: #8f780f;
         width: 200%;
-        height: 60%;
-        top: 50%;
+        height: 50%;
+        top: 55%;
+    }
+
+    .backdrop-black25 {
+        position: absolute;
+        left: -50%;
+        z-index: -20;
+        transform: rotate(-5deg);
+
+        background: #c7a108;
+        width: 200%;
+        height: 50%;
+        top: 55%;
+    }
+
+    .backdrop-black252 {
+        position: absolute;
+        left: -50%;
+        z-index: -20;
+        transform: rotate(5deg);
+
+        background: #c7a108;
+        width: 200%;
+        height: 50%;
+        top: 55%;
+    }
+
+    #bnr-mic-backdrop {
+        position: absolute;
+        top: 44.5%;
+        left: 83%;
+        z-index: -12;
+
+        & img {
+            width: 10em;
+        }
     }
 
     /* === Footer === */
@@ -217,6 +251,7 @@
         font-size: calc(16px + 2vw);
         font-family: JakartaExtraBold;
         text-align: center;
+        color: var(--bnr-grey);
     }
 
     .programs {
