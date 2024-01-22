@@ -226,7 +226,7 @@
     .programs {
         margin: 4em auto;
         background: white;
-        max-width: 70%;
+        max-width: fit-content;
         z-index: 1;
     }
     
@@ -259,7 +259,7 @@
     .podcast-information {
         padding: 1em;
         grid-area: info;
-    
+
         & h2 {
             font-family: JakartaExtraBold;
             font-size: 36px;
@@ -319,7 +319,12 @@
         justify-content: center;
     }
 
-@media (min-width: 60em) {
+@media (min-width: 56em) {
+
+    .programs {
+        max-width: 75%;
+    }
+
     .program {
         grid-template-areas: 
         "cover info"
