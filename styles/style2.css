@@ -227,6 +227,10 @@
     .programs {
         margin: 4em auto;
         background: white;
+<<<<<<< HEAD
+=======
+        max-width: 70%;
+>>>>>>> parent of a95a615 (Update style2.css)
         z-index: 1;
         width: fit-content;
     }
@@ -253,7 +257,7 @@
     .podcast-information {
         padding: 1em;
         grid-area: info;
-
+    
         & h2 {
             font-family: JakartaExtraBold;
             font-size: 36px;
@@ -327,12 +331,7 @@
         justify-content: center;
     }
 
-@media (min-width: 56em) {
-
-    .programs {
-        max-width: 75%;
-    }
-
+@media (min-width: 60em) {
     .program {
         grid-template-areas: 
         "cover info"
