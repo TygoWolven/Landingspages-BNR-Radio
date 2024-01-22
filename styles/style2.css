@@ -34,15 +34,48 @@
 
 /* === Body Background === */
     body {
-        background-image: url(../images/bnr-slice1-small-yellow.png);
-        background-repeat: no-repeat;
-        background-position: left 0;
-        background-size: 1200px;
+        background: var(--bnr-color);
         overflow-x: hidden;
     }
 
     body, html {
         word-spacing: 0.125em;
+    }
+
+    .backdrop-black {
+        position: absolute;
+        left: -50%;
+        z-index: -10;
+        transform: rotate(2deg);
+
+        background: var(--bnr-grey);
+        width: 200%;
+        height: 30%;
+        top: 75%;
+    }
+
+    .backdrop-black2 {
+        position: absolute;
+        left: -50%;
+        z-index: -10;
+        transform: rotate(-2deg);
+
+        background: var(--bnr-grey);
+        width: 200%;
+        height: 30%;
+        top: 60%;
+    }
+
+    .backdrop-greenish {
+        position: absolute;
+        left: -50%;
+        z-index: -15;
+        transform: rotate(1deg);
+
+        background: #8F780F;
+        width: 200%;
+        height: 60%;
+        top: 50%;
     }
 
     #switch-hint {
@@ -171,166 +204,118 @@
         right: -2px;
     }
 
+    hr {
+        width: 90%;
+        margin: 0 auto;
+    }
+
     /* === Main Content === */
     .landingspage-content {
         width: 100%;
-        height: 100vh;
+        height: 100%;
     }
 
-    .slogan {
-        width: fit-content;
-        margin: 0 auto;
-        padding-top: 5em;
-
-        & h1 {
-            font-size: calc(16px + 3.85vw);
-        }
-
-        & span {
-            position: relative;
-            bottom: 20px;
-
-            font-family: JakartaExtraBold;
-            font-size: calc(36px + 9.62vw);
-        }
-    }
-
-    .animated-slogan {
-        height: 200px;
-        overflow: hidden;
+    .page-title {
+        padding-top: 2.5em;
+        font-size: 3em; 
+        font-size: 3vw;
+        font-family: JakartaExtraBold;
         text-align: center;
-
-        & div {
-            height: 100%;
-            animation: spinWords 10s infinite;
-        }
-
-        & .bnr-spacing {
-            letter-spacing: 8px;
-        }
     }
 
-    @keyframes spinWords {
-        25% {
-            transform: translateY(0);
-        }
-        50% {
-            transform: translateY(-100%);
-        }
-        75% {
-            transform: translateY(-100%);
-        }
-        100% {
-            transform: translateY(-200%);
-        }
+    .programs {
+        margin: 4em auto;
+        background: white;
+        max-width: 70%;
+        z-index: 1;
     }
-
-    /* === Download Links === */
-    .app-downloads {
-        width: fit-content;
-        padding-top: 1.5em;
-        margin: 0 auto;
-
+    
+    .program {
+        padding: 2em;
         display: grid;
-        grid-template-areas:
-        "as qr"
-        "gp qr";
-        grid-gap: 10px;
-    }
+        grid-template-areas: 
+        "cover info"
+        "cover options";
 
-    #googleplay {
-        width: calc(60px + 23vw);
-
-        grid-area: gp;
-        align-self: end;
-    }
-
-    #appstore {
-        width: calc(60px + 23vw);
-
-        grid-area: as;
-    }
-
-    #qr {
-        width: calc(56px + 13.5vw);
-        background-color: black;
-        border: solid #A6A6A6;
-        border-radius: 10px;
-        padding: 0.5em;
-
-        grid-area: qr;
-    }
-
-    /* === App on Iphone === */
-    #BNR-Iphone {
-        width: 15em;
-        transform: scaleX(-1) rotateZ(-50deg);
-
-        position: absolute;
-        right: 0;
-        left: 0;
-        margin: 0 auto;
-        padding-top: 3em;
-
-        transition: var(--transition-1);
-        z-index: -40;
-    }
-
-@media (min-width: 67em) {
-    /* === Body Background === */
-    body {
-        background-image: url(../images/bnr-slice1.png);
-        background-size: 2000px;
-    }
-
-    /* === Title Text === */
-    .slogan {
-        position: absolute;
-        top: 15%;
-        left: 15%;
-        z-index: -40;
-
-        & h1 {
-            font-size: 3.5rem;
+        & a {
+            justify-self: center;
+            grid-area: cover;
         }
-        & span {
-            font-size: 8.5rem;
+    
+        & img {
+            max-width: 20em;
+            border: solid 1px rgb(215, 215, 215);
+        }
+    
+        & p {
+            width: 30em;
+            line-height: 1.4;
+            padding-top: 1em;
+        }
+    }
+    
+    .podcast-information {
+        padding: 1em;
+        grid-area: info;
+    
+        & h2 {
+            font-family: JakartaExtraBold;
+            font-size: 36px;
         }
     }
 
-    /* === App on Iphone === */
-    #BNR-Iphone {
-        width: 25em;
-        transform: scaleX(-1) rotateZ(-5deg);
+    .podcast-options {
+        padding: 1em;
+        grid-area: options;
 
-        right: -13%;
-        top: 15%;
-        margin-right: 0;
+        & .program-buttons {
+
+
+            & button {
+                background: white;
+                border: solid 1px rgb(215, 215, 215);
+                padding: 1em;
+                margin: 0.75em 0.75em 0 0;
+                font-family: JakartaExtraBold;
+            }
+
+            & button:hover {
+                cursor: pointer;
+             }
+        
+             & a {
+                font-family: JakartaExtraBold;
+                text-decoration: none;
+                color: black;
+             }
+        
+             & i {
+                background: var(--bnr-color);
+                margin-right: 0.75em;
+                border-radius: 50%;
+                padding: 0.5em;
+             }
+        }
     }
 
-    /* === Download Links === */
-    #googleplay {
-        width: 300px;
+    #programmagids-button {
+        background: var(--bnr-color);
+        padding: 1em;
+        border: none;
+        margin: 2em;
+
+        & a {
+            font-family: JakartaExtraBold;
+            text-decoration: none;
+            color: black;
+        }
     }
 
-    #appstore {
-        width: 300px;
-
+    .programmagids-button-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
-
-    #qr {
-        width: 198px;
-    }
-
-    .app-downloads {
-        float: left;
-    }
-
-    .animated-slogan{
-        text-align: left;
-    }
-
-}
 
 /* === Media Query for Desktop === */
 @media (min-width: 82em) {
@@ -450,11 +435,6 @@
 
     #menu-button {
         display: none;
-    }
-
-    /* === Download Links === */
-    #BNR-Iphone {
-        right: 5%;
     }
 
     .mediaplayer {
