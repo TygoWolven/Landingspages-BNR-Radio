@@ -105,6 +105,7 @@
 
         & .column {
             padding: 2em 4em;
+            width: 300px;
         }
 
         & h2 {
@@ -519,24 +520,15 @@
         }
     }
 
-    #volume-button {
-        color: var(--bnr-color);
-        scale: 3;
-    }
-
-    #play-button2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        scale: 3;
-
-        color: var(--bnr-grey);
+    #luister-live2 {
         background: var(--bnr-color);
-
-        width: 20px;
+        border: none;
         aspect-ratio: 1;
-
         border-radius: 50%;
+
+        & i {
+            scale: 2;
+        }
     }
 
     .blurred-wall {
