@@ -234,8 +234,9 @@
         padding: 2em;
         display: grid;
         grid-template-areas: 
-        "cover info"
-        "cover options";
+        "cover"
+        "info"
+        "options";
 
         & a {
             justify-self: center;
@@ -248,9 +249,10 @@
         }
     
         & p {
-            width: 30em;
+            max-width: 30em;
             line-height: 1.4;
             padding-top: 1em;
+            display: flex;
         }
     }
     
@@ -317,8 +319,16 @@
         justify-content: center;
     }
 
+@media (min-width: 60em) {
+    .program {
+        grid-template-areas: 
+        "cover info"
+        "options options";
+    }
+}
+
 /* === Media Query for Desktop === */
-@media (min-width: 82em) {
+@media (min-width: 76em) {
     /* === Navigation Links === */
     .nav-links {
         display: flex;
@@ -537,5 +547,11 @@
 
     .show {
         display: block;
+    }
+
+    .program {
+        grid-template-areas: 
+        "cover info"
+        "cover options";
     }
 }
