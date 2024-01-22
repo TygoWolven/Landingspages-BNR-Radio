@@ -42,42 +42,6 @@
         word-spacing: 0.125em;
     }
 
-    .backdrop-black {
-        position: absolute;
-        left: -50%;
-        z-index: -10;
-        transform: rotate(2deg);
-
-        background: var(--bnr-grey);
-        width: 200%;
-        height: 30%;
-        top: 75%;
-    }
-
-    .backdrop-black2 {
-        position: absolute;
-        left: -50%;
-        z-index: -10;
-        transform: rotate(-2deg);
-
-        background: var(--bnr-grey);
-        width: 200%;
-        height: 30%;
-        top: 60%;
-    }
-
-    .backdrop-greenish {
-        position: absolute;
-        left: -50%;
-        z-index: -15;
-        transform: rotate(1deg);
-
-        background: #8F780F;
-        width: 200%;
-        height: 60%;
-        top: 50%;
-    }
-
     #switch-hint {
         position: absolute;
         top: 75px;
@@ -124,6 +88,43 @@
         background: var(--bnr-grey);
         height: 4em;
         z-index: 4;
+    }
+
+    /* === Backdrop Main Content === */
+    .backdrop-black {
+        position: absolute;
+        left: -50%;
+        z-index: -10;
+        transform: rotate(2deg);
+
+        background: var(--bnr-grey);
+        width: 200%;
+        height: 30%;
+        top: 75%;
+    }
+
+    .backdrop-black2 {
+        position: absolute;
+        left: -50%;
+        z-index: -10;
+        transform: rotate(-2deg);
+
+        background: var(--bnr-grey);
+        width: 200%;
+        height: 30%;
+        top: 60%;
+    }
+
+    .backdrop-greenish {
+        position: absolute;
+        left: -50%;
+        z-index: -15;
+        transform: rotate(1deg);
+
+        background: #8F780F;
+        width: 200%;
+        height: 60%;
+        top: 50%;
     }
 
     /* === Footer === */
@@ -205,11 +206,6 @@
         right: -2px;
     }
 
-    hr {
-        width: 90%;
-        margin: 0 auto;
-    }
-
     /* === Main Content === */
     .landingspage-content {
         width: 100%;
@@ -218,7 +214,6 @@
 
     .page-title {
         padding-top: 100px;
-        font-size: 3em; 
         font-size: calc(16px + 2vw);
         font-family: JakartaExtraBold;
         text-align: center;
@@ -226,17 +221,9 @@
 
     .programs {
         margin: 4em auto;
-        background: white;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        max-width: 70%;
->>>>>>> parent of a95a615 (Update style2.css)
-=======
-        max-width: 70%;
->>>>>>> parent of a95a615 (Update style2.css)
-        z-index: 1;
         width: fit-content;
+        background: white;
+        z-index: 1;
     }
     
     .program {
@@ -288,7 +275,6 @@
 
         & .program-buttons {
 
-
             & button {
                 background: white;
                 border: solid 1px rgb(215, 215, 215);
@@ -335,6 +321,12 @@
         justify-content: center;
     }
 
+    hr {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+/* === Media Query for Medium Screens === */
 @media (min-width: 60em) {
     .program {
         grid-template-areas: 
@@ -555,7 +547,7 @@
     .blurred-wall {
         position: absolute;
         width: 100%;
-        height: 130%;
+        height: 135%;
 
         background-color: #ffffff10;
         backdrop-filter: blur(10px);

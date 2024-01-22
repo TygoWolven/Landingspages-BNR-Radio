@@ -34,4 +34,3 @@ function changeButton () {
         livePlayer.pause()
     }
 }
-
