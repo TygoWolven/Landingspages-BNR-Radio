@@ -169,13 +169,17 @@
 
     /* === Footer === */
     footer {
-        padding: 3em;
-        background: var(--bnr-grey);
-        color: white;
+        position: absolute;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+
+        width: 100%;
+        padding: 3em;
         font-size: 14px;
+
+        background: var(--bnr-grey);
+        color: white;
 
         & .column {
             padding: 2em 4em;
@@ -203,6 +207,51 @@
         & img {
             width: 160px;
         }
+    }
+
+    /* === Footer Backdrop Black Bar === */
+    .backdrop-footer-black {
+        position: absolute;
+        left: -50%;
+        z-index: -15;
+        transform: rotate(3.5deg);
+
+        background: var(--bnr-grey);
+        width: 200%;
+        height: 20%;
+    }
+
+    .backdrop-footer-black2 {
+        position: absolute;
+        left: -50%;
+        z-index: -15;
+        transform: rotate(-3.5deg);
+
+        background: var(--bnr-grey);
+        width: 200%;
+        height: 20%;
+    }
+
+    .backdrop-footer-black25 {
+        position: absolute;
+        left: -50%;
+        z-index: -20;
+        transform: rotate(7deg);
+
+        background: #c7a108;
+        width: 200%;
+        height: 20%;
+    }
+
+    .backdrop-footer-black252 {
+        position: absolute;
+        left: -50%;
+        z-index: -20;
+        transform: rotate(-7deg);
+
+        background: #c7a108;
+        width: 200%;
+        height: 20%;
     }
 
     /* === No Display for Mobile === */
