@@ -42,6 +42,7 @@
         word-spacing: 0.125em;
     }
 
+    /* === Landingspage Switch === */
     #switch-hint {
         position: absolute;
         top: 75px;
@@ -90,7 +91,7 @@
         z-index: 4;
     }
 
-    /* === Backdrop Main Content === */
+    /* === Backdrop Black Bar === */
     .backdrop-black {
         position: absolute;
         left: -50%;
@@ -103,6 +104,7 @@
         top: 60%;
     }
 
+    /* === Backdrop Black Bar === */
     .backdrop-black2 {
         position: absolute;
         left: -50%;
@@ -115,6 +117,7 @@
         top: 60%;
     }
 
+    /* === Backdrop Black Bar 50% Opacity Color === */
     .backdrop-black50 {
         position: absolute;
         left: -50%;
@@ -126,6 +129,7 @@
         top: 55%;
     }
 
+    /* === Backdrop Black Bar 25% Opacity Color === */
     .backdrop-black25 {
         position: absolute;
         left: -50%;
@@ -138,6 +142,7 @@
         top: 55%;
     }
 
+    /* === Backdrop Black Bar 25% Opacity Color === */
     .backdrop-black252 {
         position: absolute;
         left: -50%;
@@ -150,6 +155,7 @@
         top: 55%;
     }
 
+    /* === Backdrop BNR Microphone === */
     #bnr-mic-backdrop {
         position: absolute;
         top: 44.5%;
@@ -246,6 +252,7 @@
         height: 100%;
     }
 
+    /* === Title === */
     .page-title {
         padding-top: 100px;
         font-size: calc(16px + 2vw);
@@ -254,6 +261,7 @@
         color: var(--bnr-grey);
     }
 
+    /* === Podcasts Section === */
     .programs {
         margin: 4em auto;
         width: fit-content;
@@ -261,6 +269,7 @@
         z-index: 1;
     }
     
+    /* === Podcasts within Section === */
     .program {
         padding: 2em;
         display: grid;
@@ -280,6 +289,7 @@
         }
     }
     
+    /* === Information about Podcast === */
     .podcast-information {
         padding: 1em;
         grid-area: info;
@@ -303,6 +313,7 @@
         }
     }
 
+    /* === Listen-options for Podcast === */
     .podcast-options {
         padding: 1em;
         grid-area: options;
@@ -337,6 +348,7 @@
         }
     }
 
+    /* === Button to Complete Guide of Podcast === */
     #programmagids-button {
         background: var(--bnr-color);
         padding: 1em;
@@ -350,6 +362,7 @@
         }
     }
 
+    /* === Wrapper for Button to Complete Guide of Podcast === */
     .programmagids-button-wrapper {
         width: 100%;
         display: flex;
@@ -361,6 +374,7 @@
         margin: 0 auto;
     }
 
+    /* === Title 2 === */
     .page-title2 {
         font-size: calc(16px + 2vw);
         font-family: JakartaExtraBold;
@@ -375,6 +389,7 @@
         max-width: 30em;
     }
 
+    /* === Button for more Information about the App === */
     #meer-informatie-button {
         background: var(--bnr-grey);
         border: none;
@@ -389,6 +404,7 @@
         }
     }
 
+    /* === Wrapper for Button for more Information about the App === */
     .meer-informatie-button-wrapper {
         width: 100%;
         display: flex;
@@ -397,6 +413,7 @@
     
 /* === Media Query for Medium Screens === */
 @media (min-width: 60em) {
+    /* === Podcasts within Section === */
     .program {
         grid-template-areas: 
         "cover info"
@@ -540,6 +557,7 @@
         display: none;
     }
 
+    /* === Mediaplayer inside Navigation Bar === */
     .mediaplayer {
         position: absolute;
         right: 0;
@@ -633,6 +651,7 @@
         display: block;
     }
 
+    /* === Podcast within Section === */
     .program {
         grid-template-areas: 
         "cover info"
