@@ -357,8 +357,42 @@
     }
 
     hr {
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
+    }
+
+    .page-title2 {
+        font-size: calc(16px + 2vw);
+        font-family: JakartaExtraBold;
+        text-align: center;
+        color: var(--bnr-grey);
+    }
+
+    .app-promotion {
+        font-size: calc(16px + 0.4vw);
+        margin: 0 auto;
+        text-align: center;
+        max-width: 30em;
+    }
+
+    #meer-informatie-button {
+        background: var(--bnr-grey);
+        border: none;
+        padding: 1em;
+        margin: 5em;
+        margin-top: 2em;
+
+        & a {
+            font-family: JakartaExtraBold;
+            text-decoration: none;
+            color: var(--bnr-color);
+        }
+    }
+
+    .meer-informatie-button-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     
 /* === Media Query for Medium Screens === */
