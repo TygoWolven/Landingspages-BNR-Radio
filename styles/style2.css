@@ -158,7 +158,7 @@
     /* === Backdrop BNR Microphone === */
     #bnr-mic-backdrop {
         position: absolute;
-        top: 44.5%;
+        bottom: 37%;
         left: 83%;
         z-index: -12;
 
