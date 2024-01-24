@@ -6,7 +6,10 @@ In dit project ben ik gaan werken aan 2 landingspages voor het BNR, deze sluiten
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
-<img width="700" src="https://github.com/TygoWolven/landingspages-bnr-radio/assets/144010858/8aa5ca01-3c4a-4c91-aa8e-df9e9ae60807">
+<img width="700" src="https://github.com/TygoWolven/landingspages-bnr-radio/assets/144010858/6209a990-cd18-459f-9e71-21fe097150a7">
+
+<img width="700" src="https://github.com/TygoWolven/landingspages-bnr-radio/assets/144010858/dafa96bb-d7ae-4567-8a09-7b841a831c54">
+
 
 
 ## Kenmerken
