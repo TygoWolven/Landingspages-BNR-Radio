@@ -4,9 +4,11 @@ In dit project ben ik gaan werken aan 2 landingspages voor het BNR, deze sluiten
 ## Opdrachtomschrijving
 
 **Landingspage App Download**
+
 <img width="700" src="https://github.com/TygoWolven/landingspages-bnr-radio/assets/144010858/6209a990-cd18-459f-9e71-21fe097150a7">
 
-**Landingspage LSS Streams** _Livestream Starts_
+**Landingspage LSS** _(Livestream Starts)_ **Streams**
+
 <img width="700" src="https://github.com/TygoWolven/landingspages-bnr-radio/assets/144010858/dafa96bb-d7ae-4567-8a09-7b841a831c54">
 
 ## Kenmerken
