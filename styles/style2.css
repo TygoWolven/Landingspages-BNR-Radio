@@ -50,7 +50,7 @@
 
         color: white;
         background: var(--bnr-grey);
-        animation: flashDissapear 3s 5 forwards;
+        animation: flashDissapear 3s infinite;
         animation-delay: 1s;
         opacity: 0;
 
